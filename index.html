@@ -19,7 +19,7 @@
             background-color: #F5F5F5;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: center;
+            text-align: left; /* Align header content to the left */
         }
 
         .logo {
@@ -45,49 +45,22 @@
         }
 
         .hero-title {
-            font-size: 36px;
+            font-size: 48px; /* Big and bold */
             color: #333;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         .hero-subtitle {
-            font-size: 20px;
-            color: #555;
+            font-size: 24px; /* No Fees. No Commissions. No Hassle. */
+            color: #ca6f00;
             margin-bottom: 30px;
-        }
-
-        .hero-description {
-            max-width: 600px;
-            margin: 0 auto;
-            font-size: 18px;
-            color: #777;
-            line-height: 1.6;
-        }
-
-        /* Key Benefits Section */
-        .benefits-section {
-            background-color: #ffffff;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .benefits-title {
-            font-size: 32px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-
-        .benefit {
-            font-size: 18px;
-            color: #555;
-            margin: 10px 0;
         }
 
         /* Call to Action Section */
         .cta-section {
             padding: 40px 20px;
             text-align: center;
-            background-color: #E0E0E0;
+            background-color: #ffffff;
         }
 
         .cta-title {
@@ -136,6 +109,44 @@
             background-color: #a45c00;
         }
 
+        /* How It Works Section */
+        .process-section {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .process-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .process-item {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        /* Key Benefits Section */
+        .benefits-section {
+            background-color: #ffffff;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .benefits-title {
+            font-size: 32px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .benefit {
+            font-size: 18px;
+            color: #555;
+            margin: 10px 0;
+        }
+
         /* Footer Styles */
         .footer {
             background-color: #333;
@@ -164,27 +175,26 @@
             .header-tagline, .hero-title, .benefits-title, .cta-title {
                 font-size: 20px;
             }
+
+            .hero-title {
+                font-size: 36px; /* Adjusted for smaller screens */
+            }
+
+            .hero-subtitle {
+                font-size: 20px; /* Adjusted for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
     <div class="header">
-        <img src="BIG Property Services Logo.png" alt="Company Logo" class="logo">
+        <img src="BIG property services logo.png" alt="Company Logo" class="logo">
         <h1 class="header-tagline">Helping You Move Forward with Ease</h1>
     </div>
 
     <div class="hero-section">
-        <h2 class="hero-title">Ready to Sell Your Distressed Property?</h2>
-        <p class="hero-subtitle">Get a fair cash offer and peace of mind with a quick, hassle-free process.</p>
-        <p class="hero-description">At BIG Property Services, we understand the challenges you face. Our compassionate team is here to help you find financial relief and a seamless path to selling your property as-is.</p>
-    </div>
-
-    <div class="benefits-section">
-        <h2 class="benefits-title">Why Choose Us?</h2>
-        <p class="benefit">💰 Financial Relief: We provide fair cash offers to help alleviate your financial burdens.</p>
-        <p class="benefit">🏚️ No Repairs Needed: Sell your property as-is; no need for costly repairs or renovations.</p>
-        <p class="benefit">⏳ Quick Process: Experience a streamlined and hassle-free selling process.</p>
-        <p class="benefit">🤝 Compassionate Support: We understand your situation and are here to help you through every step.</p>
+        <h2 class="hero-title">We'll Buy Your House Fast for Cash.</h2>
+        <p class="hero-subtitle">No Fees. No Commissions. No Hassle.</p>
     </div>
 
     <div class="cta-section">
@@ -198,6 +208,21 @@
             <textarea class="form-input form-textarea" placeholder="Brief Message (optional)"></textarea>
             <button type="submit" class="form-button">Get My Cash Offer</button>
         </form>
+    </div>
+
+    <div class="process-section">
+        <h2 class="process-title">How It Works</h2>
+        <p class="process-item">1. **Contact Us:** Reach out via our website or phone to express your interest in selling your property.</p>
+        <p class="process-item">2. **Free Consultation:** Schedule a no-obligation consultation to discuss your situation and assess your property.</p>
+        <p class="process-item">3. **Receive a Fair Cash Offer:** We provide a fair cash offer for your property, allowing you to make a stress-free decision.</p>
+    </div>
+
+    <div class="benefits-section">
+        <h2 class="benefits-title">Why Choose Us?</h2>
+        <p class="benefit">💰 Financial Relief: We provide fair cash offers to help alleviate your financial burdens.</p>
+        <p class="benefit">🏚️ No Repairs Needed: Sell your property as-is; no need for costly repairs or renovations.</p>
+        <p class="benefit">⏳ Quick Process: Experience a streamlined and hassle-free selling process.</p>
+        <p class="benefit">🤝 Compassionate Support: We understand your situation and are here to help you through every step.</p>
     </div>
 
     <div class="footer">
