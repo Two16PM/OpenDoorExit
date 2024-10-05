@@ -280,12 +280,12 @@
     <div class="cta-section">
         <h2 class="cta-title">TAKE THE FIRST STEP TODAY!</h2>
         <h3 class="cta-description">Fill the form to get your cash offer.</h3>
-        <form class="contact-form">
-            <input type="text" class="form-input" placeholder="Your Name" required>
-            <input type="email" class="form-input" placeholder="Your Email" required>
-            <input type="tel" class="form-input" placeholder="Your Phone Number" required>
-            <input type="text" class="form-input" placeholder="Property Address" required>
-            <textarea class="form-input form-textarea" placeholder="Brief Message (optional)"></textarea>
+        <form class="contact-form" netlify>
+            <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+            <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+            <input type="tel" class="form-input" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" class="form-input" name="property-address" placeholder="Property Address" required>
+            <textarea class="form-input form-textarea" name="message" placeholder="Brief Message (optional)"></textarea>
             <button type="submit" class="form-button">Get My Cash Offer</button>
         </form>
     </div>
