@@ -32,23 +32,23 @@
             padding: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
-            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-            text-align: center;
         }
 
         .logo {
             width: 150px;
             height: auto;
-            margin-bottom: 20px;
         }
 
         .header-tagline {
-            font-size: 24px;
+            font-size: 30px;
             color: #004225;
+            margin: 10px 0;
         }
 
         .contact-info {
+            text-align: right;
             font-size: 18px;
             color: #004225;
         }
@@ -65,12 +65,12 @@
         /* Hero Section */
         .hero-section {
             background: linear-gradient(180deg, #004225, #006644);
-            padding: 80px 20px;
+            padding: 120px 40px;
             text-align: center;
         }
 
         .hero-title {
-            font-size: 36px;
+            font-size: 52px;
             font-weight: bold;
             letter-spacing: 1px;
             color: #fffdd0;
@@ -78,33 +78,34 @@
         }
 
         .hero-subtitle {
-            font-size: 24px;
+            font-size: 38px;
             color: #fffdd0;
+            font-weight: 400;
             margin-bottom: 30px;
         }
 
         /* Call to Action Section */
         .cta-section {
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
             background-color: #fffdd0;
         }
 
         .cta-title {
-            font-size: 28px;
+            font-size: 34px;
             font-weight: 700;
             color: #004225;
             margin-bottom: 20px;
         }
 
         .cta-description {
-            font-size: 18px;
+            font-size: 20px;
             color: #004225;
             margin-bottom: 30px;
         }
 
         .contact-form {
-            max-width: 100%;
+            max-width: 600px;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
@@ -126,11 +127,11 @@
 
         /* Button Hover Effects */
         .form-button {
-            background-color: #138808;
+            background-color: #004225;
             color: #fffdd0;
             border: none;
             padding: 20px;
-            font-size: 24px;
+            font-size: 30px;
             font-weight: bold;
             border-radius: 5px;
             cursor: pointer;
@@ -147,62 +148,74 @@
         .about-us-section {
             background: url('subtle-pattern.png'), linear-gradient(180deg, #004225, #006644);
             color: white;
-            padding: 40px 20px;
-            text-align: center;
+            padding: 60px 40px;
+            text-align: left;
         }
 
         .about-us-container {
             display: flex;
-            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .about-us-left {
+            flex: 1;
+            padding: 20px;
         }
 
         .about-us-image {
             width: 100%;
             height: auto;
-            margin-bottom: 20px;
             border-radius: 10px;
         }
 
+        .about-us-right {
+            flex: 1;
+            padding: 20px;
+        }
+
         .about-us-title {
-            font-size: 28px;
+            font-size: 36px;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             color: #fffdd0;
         }
 
         .about-us-text {
-            font-size: 18px;
+            font-size: 22px;
             line-height: 1.6;
-            margin-bottom: 10px;
+            margin: 10px 0;
             color: #e0d8c1;
-            text-align: center;
         }
 
-        /* Why You Should Work With Us Section */
+        /* WHY YOU SHOULD WORK WITH US Section */
         .cream-section {
             background-color: #fffdd0;
-            padding: 40px 20px;
+            padding: 60px 40px;
             text-align: center;
         }
 
         .section-title {
-            font-size: 28px;
+            font-size: 34px;
             font-weight: bold;
             color: #004225;
             margin-bottom: 20px;
         }
 
         .benefits-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .benefit-box {
             background-color: #f9f9f9;
             border-radius: 10px;
-            padding: 20px;
+            padding: 30px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -220,15 +233,14 @@
 
         /* HOW IT WORKS Section */
         .process-grid {
-            display: flex;
-            flex-direction: column;
-            gap: 40px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
 
         .process-step {
             font-size: 18px;
             color: #004225;
-            text-align: center;
+            margin-bottom: 40px;
         }
 
         .process-title {
@@ -248,7 +260,7 @@
 
         .footer p {
             margin: 5px 0;
-            font-size: 18px;
+            font-size: 22px;
             color: #fffdd0;
         }
 
@@ -259,6 +271,48 @@
 
         .footer a:hover {
             text-decoration: underline;
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            .header .logo {
+                margin-bottom: 15px;
+            }
+
+            .about-us-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .about-us-left, .about-us-right {
+                flex: none;
+                width: 100%;
+                padding: 0;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-grid {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .hero-title {
+                font-size: 28px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
