@@ -212,25 +212,49 @@
         }
 
         .process-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr); /* Two columns */
-            grid-gap: 20px; /* Space between boxes */
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .process-box, .notes-box {
-            background-color: #004225;
-            border-radius: 10px;
-            padding: 20px;
-            text-align: left;
-        }
-
-    @media (max-width: 768px) {
-        .process-grid {
-            grid-template-columns: 1fr; /* Stack boxes on smaller screens */
-        }
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns for the steps */
+    grid-gap: 20px; /* Space between boxes */
+    max-width: 1200px;
+    margin: 0 auto;
 }
+
+.process-box {
+    background-color: #004225;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.process-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.process-icon-image {
+    width: 50px; /* Adjust icon size */
+    height: 50px;
+}
+
+.process-item {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fffdd0;
+    margin: 10px 0;
+}
+
+.process-description {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fffdd0;
+}
+
+@media (max-width: 768px) {
+    .process-grid {
+        grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+    }
 
         .process-title {
             font-size: 36px;
@@ -395,27 +419,29 @@
         <h3 class="benefit"><span>🤝</span> <strong>Compassionate Support:</strong> We understand your situation and are here to help you through every step.</h3>
     </div>
 
-
-
-
 <div class="process-section">
     <h2 class="process-title">HOW IT WORKS</h2>
     <div class="process-grid">
         <div class="process-box">
+            <div class="process-icon">
+                <img src="path-to-your-icon-1.png" alt="Step 1 Icon" class="process-icon-image">
+            </div>
             <h3 class="process-item">1. Fill Out The Form</h3>
             <p class="process-description">Tell us about your home in the form, and we will start to review it. After learning all the details, we will be ready to prepare you an offer with the best price for your place.</p>
         </div>
         <div class="process-box">
+            <div class="process-icon">
+                <img src="path-to-your-icon-2.png" alt="Step 2 Icon" class="process-icon-image">
+            </div>
             <h3 class="process-item">2. Accept Our Offer</h3>
             <p class="process-description">We contact you with our offer. You can ask any questions, and if you agree with an offer, you can accept it and continue the process.</p>
         </div>
         <div class="process-box">
+            <div class="process-icon">
+                <img src="path-to-your-icon-3.png" alt="Step 3 Icon" class="process-icon-image">
+            </div>
             <h3 class="process-item">3. Close The Deal</h3>
             <p class="process-description">Once you accept the offer, we sign a contract and schedule a closing date. Then we complete a transaction, and you are getting your cash in a few days.</p>
-        </div>
-        <div class="notes-box">
-<p class="notes-text"><strong>We offer compassionate solutions to meet your needs</strong>. We'll discuss the various options for selling your property, focusing on your needs and preferences.</p>
-            <p class="notes-text"><strong>We have transparent and open communication</strong>. We keep you informed throughout the process, answering questions and addressing concerns.</p>
         </div>
     </div>
 </div>
