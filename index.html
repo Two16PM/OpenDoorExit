@@ -211,6 +211,27 @@
             text-align: center;
         }
 
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-gap: 20px; /* Space between boxes */
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process-box, .notes-box {
+            background-color: #004225;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: left;
+        }
+
+    @media (max-width: 768px) {
+        .process-grid {
+            grid-template-columns: 1fr; /* Stack boxes on smaller screens */
+        }
+}
+
         .process-title {
             font-size: 36px;
             font-weight: bold;
@@ -360,8 +381,8 @@
         </div>
         <div class="about-us-right">
             <h2 class="about-us-title">ABOUT US</h2>
-            <p class="about-us-text">At BIG Property Services, our mission is to empower distressed property owners...</p>
-            <p class="about-us-text">We understand the unique challenges you face, and our goal is to streamline the process...</p>
+            <p class="about-us-text">At BIG Property Services, our mission is to empower distressed property owners by transforming their properties into cash, enabling them to pursue new opportunities and achieve peace of mind. We work closely with property owners every day, dedicated to helping you turn your unwanted or burdensome property into immediate financial relief.</p>
+            <p class="about-us-text">We understand the unique challenges you face, and our goal is to streamline the process, making it fast, safe, and hassle-free. When you submit your information, we strive to provide you with a fair cash offer within 24 hours. Rest assured, your information is kept secure and confidential throughout the process. Once you accept our offer, you’ll receive your cash promptly, with absolutely no hidden fees or commissions. Partner with us, and let’s turn your property challenges into a new beginning.</p>
         </div>
     </div>
 </div>
@@ -374,25 +395,30 @@
         <h3 class="benefit"><span>🤝</span> <strong>Compassionate Support:</strong> We understand your situation and are here to help you through every step.</h3>
     </div>
 
-    <div class="process-section">
-        <h2 class="process-title">HOW IT WORKS</h2>
+
+
+
+<div class="process-section">
+    <h2 class="process-title">HOW IT WORKS</h2>
+    <div class="process-grid">
         <div class="process-box">
-            <h3 class="process-item"><strong>1. Fill Out The Form:</strong></h3>
+            <h3 class="process-item">1. Fill Out The Form</h3>
             <p class="process-description">Tell us about your home in the form, and we will start to review it. After learning all the details, we will be ready to prepare you an offer with the best price for your place.</p>
         </div>
         <div class="process-box">
-            <h3 class="process-item"><strong>2. Accept Our Offer:</strong></h3>
+            <h3 class="process-item">2. Accept Our Offer</h3>
             <p class="process-description">We contact you with our offer. You can ask any questions, and if you agree with an offer, you can accept it and continue the process.</p>
         </div>
         <div class="process-box">
-            <h3 class="process-item"><strong>3. Close The Deal:</strong></h3>
+            <h3 class="process-item">3. Close The Deal</h3>
             <p class="process-description">Once you accept the offer, we sign a contract and schedule a closing date. Then we complete a transaction, and you are getting your cash in a few days.</p>
         </div>
         <div class="notes-box">
-            <p class="notes-text"><strong>We offer compassionate solutions to meet your needs</strong>. We'll discuss the various options for selling your property, focusing on your needs and preferences.</p>
+<p class="notes-text"><strong>We offer compassionate solutions to meet your needs</strong>. We'll discuss the various options for selling your property, focusing on your needs and preferences.</p>
             <p class="notes-text"><strong>We have transparent and open communication</strong>. We keep you informed throughout the process, answering questions and addressing concerns.</p>
         </div>
     </div>
+</div>
 
     <div class="footer">
         <p style="font-size: 27px;"><strong>Didn’t find the answer to your question? Contact us to get the answer of our support.</strong></p>
