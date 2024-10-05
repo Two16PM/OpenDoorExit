@@ -16,10 +16,12 @@
 
         /* Header Styles */
         .header {
-            background-color: #fffdd0; /* Header background color */
+            background-color: #fffdd0;
             padding: 20px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            text-align: left; /* Align header content to the left */
+            display: flex;
+            justify-content: space-between;
+            align-items: center; /* Align items vertically */
         }
 
         .logo {
@@ -33,22 +35,37 @@
             margin: 10px 0;
         }
 
+        .contact-info {
+            text-align: right;
+            font-size: 18px;
+            color: #004225;
+        }
+
+        .contact-info a {
+            color: #004225;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
         /* Hero Section */
         .hero-section {
-            background-color: #004225; /* Hero section background color */
+            background-color: #004225;
             padding: 100px 20px;
             text-align: center;
         }
 
         .hero-title {
-            font-size: 48px; /* Big and bold */
-            color: #fffdd0
+            font-size: 48px;
+            color: #fffdd0;
             margin-bottom: 10px;
         }
 
         .hero-subtitle {
-            font-size: 36px; /* Much bigger subtitle */
-            color: #fffdd0; /* Highlight color */
+            font-size: 36px;
+            color: #fffdd0;
             margin-bottom: 30px;
         }
 
@@ -56,14 +73,14 @@
         .cta-section {
             padding: 40px 20px;
             text-align: center;
-            background-color: #fffdd0; /* Form background color */
+            background-color: #fffdd0;
         }
 
         .cta-title {
-            font-size: 30px; /* Increased font size */
+            font-size: 30px;
             color: #004225;
-            font-weight: bold; /* Make bold */
-            text-transform: uppercase; /* All capitals */
+            font-weight: bold;
+            text-transform: uppercase;
             margin-bottom: 20px;
         }
 
@@ -104,40 +121,39 @@
         }
 
         .form-button:hover {
-            background-color: #007c7a; /* Darker shade for hover effect */
+            background-color: #007c7a;
         }
 
         /* About Us and Why Us Section */
         .about-us-section {
-            background-color: #004225; /* Background for About Us */
+            background-color: #004225;
             color: white;
-            padding: 10px 20px; /* Padding for About Us text section */
-            text-align: left; 
+            padding: 10px 20px;
+            text-align: left;
         }
 
         .about-us-container {
-            max-width: 55%; /* Set to half of the screen width */
-            margin: 0; /* Center the container */
-            padding-left: 30px; /* Add left padding */
+            max-width: 55%;
+            margin: 0;
+            padding-left: 30px;
         }
 
         .about-us-title {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #fffdd0; /* Highlight color for titles */
-            font-weight: bold; /* Make bold */
-            text-transform: uppercase; /* All capitals */
+            color: #fffdd0;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         .about-us-text {
-            font-size: 20px; /* Increased text size for About Us section */
+            font-size: 20px;
             margin: 10px 0;
             color: #fffdd0;
-
         }
 
         .benefits-section {
-            background-color: #004225; /* Why Us section background */
+            background-color: #004225;
             color: white;
             padding: 40px 20px;
             text-align: center;
@@ -145,22 +161,22 @@
 
         .benefits-title {
             font-size: 32px;
-            color: #fffdd0; /* Highlight color for titles */
+            color: #fffdd0;
             margin-bottom: 20px;
-            font-weight: bold; /* Make bold */
-            text-transform: uppercase; /* All capitals */
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         .benefit {
-            font-size: 20px; /* Increased text size for benefits */
+            font-size: 20px;
             color: #fffdd0;
             margin: 10px 0;
         }
 
         /* Process Section */
         .process-section {
-            background-color: #fffdd0; /* White background for How It Works */
-            color: #C2E812; /* Text color */
+            background-color: #fffdd0;
+            color: #C2E812;
             padding: 40px 20px;
             text-align: center;
         }
@@ -169,8 +185,8 @@
             font-size: 32px;
             color: #004225;
             margin-bottom: 20px;
-            font-weight: bold; /* Make bold */
-            text-transform: uppercase; /* All capitals */
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         .process-box {
@@ -178,40 +194,46 @@
             border-radius: 10px;
             padding: 20px;
             margin: 10px;
-            width: 280px; /* Set a fixed width for boxes */
-            height: 200px; /* Set a fixed height for uniformity */
-            display: inline-block; /* Inline block for horizontal alignment */
+            width: 280px;
+            height: 200px;
+            display: inline-block;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            vertical-align: top; /* Align boxes at the top */
+            vertical-align: top;
         }
 
         .process-item {
             font-size: 18px;
-            color: #fffdd0; /* White text for better contrast */
-            font-weight: bold; /* Make titles bold */
+            color: #fffdd0;
+            font-weight: bold;
             margin: 10px 0;
         }
 
         .process-description {
-            font-size: 16px; /* Reduced font size for paragraph text */
-            color: #fffdd0; 
+            font-size: 16px;
+            color: #fffdd0;
             margin: 5px 0;
         }
 
-        /* Notes Section */
-        .notes-section {
-            margin-top: 20px;
+        /* Notes Section as 4th Box */
+        .notes-box {
             background-color: #004225;
-            font-size: 16px; /* Adjusted font size */
-            color: #fffdd0; 
-            text-align: left; /* Left aligned notes */
-            max-width: 800px; /* Set a max-width for the notes section */
-            margin: 20px auto; /* Center the notes section */
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px auto;
+            width: 860px; /* Full width of the 3 process boxes */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        .notes-text {
+            font-size: 18px;
+            color: #fffdd0;
+            font-weight: bold;
         }
 
         /* Footer Styles */
         .footer {
-            background-color: #004225; /* Footer background color */
+            background-color: #004225;
             color: white;
             text-align: center;
             padding: 20px;
@@ -219,7 +241,7 @@
 
         .footer p {
             margin: 5px 0;
-            font-size: 20px; /* Increased font size for footer contact text */
+            font-size: 20px;
             color: #fffdd0;
         }
 
@@ -245,11 +267,15 @@
             }
 
             .hero-title {
-                font-size: 36px; /* Adjusted for smaller screens */
+                font-size: 36px;
             }
 
             .hero-subtitle {
-                font-size: 20px; /* Adjusted for smaller screens */
+                font-size: 20px;
+            }
+
+            .process-box, .notes-box {
+                width: 100%; /* Full width for smaller screens */
             }
         }
     </style>
@@ -258,6 +284,9 @@
     <div class="header">
         <img src="opendoor logo.png" alt="Company Logo" class="logo">
         <h1 class="header-tagline">Helping You Move Forward with Ease</h1>
+        <div class="contact-info">
+            <p>📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
+        </div>
     </div>
 
     <div class="hero-section">
@@ -308,11 +337,10 @@
             <h3 class="process-item"><strong>3. Close The Deal:</strong></h3>
             <p class="process-description">Once you accept the offer, we sign a contract and schedule a closing date. Then we complete a transaction, and you are getting your cash in a few days.</p>
         </div>
-    </div>
-
-    <div class="notes-section">
-        <p><strong>We offer compassionate solutions to meet your needs</strong>. We'll discuss the various options for selling your property, focusing on your needs and preferences.</p>
-        <p><strong>We have transparent and open communication</strong>. We keep you informed throughout the process, answering questions and addressing concerns.</p>
+        <div class="notes-box">
+            <p class="notes-text"><strong>We offer compassionate solutions to meet your needs</strong>. We'll discuss the various options for selling your property, focusing on your needs and preferences.</p>
+            <p class="notes-text"><strong>We have transparent and open communication</strong>. We keep you informed throughout the process, answering questions and addressing concerns.</p>
+        </div>
     </div>
 
     <div class="footer">
