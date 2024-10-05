@@ -6,21 +6,17 @@
     <title>Sell Your Distressed Property | OpenDoor Property Solutions</title>
     <link rel="icon" href="opendoor flavicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Sell Your Distressed Property Fast | OpenDoor Property Solutions">
     <meta property="og:description" content="We buy homes fast for cash! No fees, no commissions, and no hassle. Get your fair cash offer today.">
     <meta property="og:image" content="OpenDoor preview image.png">
     <meta property="og:url" content="https://two16pm.github.io/selltobig/">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="OpenDoor Property Solutions">
-
-    <!-- Twitter Card Meta Tags (optional, for Twitter sharing) -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Sell Your Distressed Property Fast | OpenDoor Property Solutions">
     <meta name="twitter:description" content="We buy homes fast for cash! No fees, no commissions, and no hassle. Get your fair cash offer today.">
     <meta name="twitter:image" content="https://two16pm.github.io/selltobig/">
     <meta name="twitter:site" content="@RB_824">
-
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
@@ -33,26 +29,26 @@
         /* Header Styles */
         .header {
             background-color: #fffdd0;
-            padding: 40px; /* Increased padding */
+            padding: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
-            justify-content: space-between;
-            align-items: center; /* Align items vertically */
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
 
         .logo {
             width: 150px;
             height: auto;
+            margin-bottom: 20px;
         }
 
         .header-tagline {
-            font-size: 30px;
+            font-size: 24px;
             color: #004225;
-            margin: 10px 0;
         }
 
         .contact-info {
-            text-align: right;
             font-size: 18px;
             color: #004225;
         }
@@ -66,22 +62,15 @@
             text-decoration: underline;
         }
 
-        /* Gradient Background for Dark Green Sections */
-        .dark-section {
-            background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
-            padding: 120px 40px; /* Increased padding for more white space */
-            text-align: center;
-        }
-
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
-            padding: 120px 40px; /* Increased padding for more white space */
+            background: linear-gradient(180deg, #004225, #006644);
+            padding: 80px 20px;
             text-align: center;
         }
 
         .hero-title {
-            font-size: 52px;
+            font-size: 36px;
             font-weight: bold;
             letter-spacing: 1px;
             color: #fffdd0;
@@ -89,49 +78,50 @@
         }
 
         .hero-subtitle {
-            font-size: 38px;
+            font-size: 24px;
             color: #fffdd0;
-            font-weight: 400;
             margin-bottom: 30px;
         }
 
         /* Call to Action Section */
         .cta-section {
-            padding: 60px 20px; /* More padding for white space */
+            padding: 40px 20px;
             text-align: center;
             background-color: #fffdd0;
         }
 
         .cta-title {
-            font-size: 34px;
+            font-size: 28px;
             font-weight: 700;
             color: #004225;
             margin-bottom: 20px;
         }
 
         .cta-description {
-            font-size: 20px;
+            font-size: 18px;
             color: #004225;
             margin-bottom: 30px;
         }
 
         .contact-form {
-            max-width: 600px;
+            max-width: 100%;
             margin: 0 auto;
             display: flex;
             flex-direction: column;
         }
 
         .form-input {
-            margin-bottom: 20px; /* Increased space between form elements */
+            margin-bottom: 20px;
             padding: 14px;
             font-size: 18px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            width: 100%;
         }
 
         .form-textarea {
-            height: 120px; /* Increased textarea size */
+            height: 120px;
+            width: 100%;
         }
 
         /* Button Hover Effects */
@@ -140,12 +130,12 @@
             color: #fffdd0;
             border: none;
             padding: 20px;
-            font-size: 30px;
+            font-size: 24px;
             font-weight: bold;
-            letter-spacing: 1px;
             border-radius: 5px;
             cursor: pointer;
             transition: background-color 0.3s ease, transform 0.3s ease;
+            width: 100%;
         }
 
         .form-button:hover {
@@ -155,76 +145,64 @@
 
         /* About Us Section */
         .about-us-section {
-            background: url('subtle-pattern.png'), linear-gradient(180deg, #004225, #006644); /* Added subtle texture */
+            background: url('subtle-pattern.png'), linear-gradient(180deg, #004225, #006644);
             color: white;
-            padding: 60px 40px; /* More padding for white space */
-            text-align: left;
+            padding: 40px 20px;
+            text-align: center;
         }
 
         .about-us-container {
             display: flex;
+            flex-direction: column;
             align-items: center;
-            justify-content: center;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .about-us-left {
-            flex: 1;
-            padding: 20px;
         }
 
         .about-us-image {
             width: 100%;
             height: auto;
+            margin-bottom: 20px;
             border-radius: 10px;
         }
 
-        .about-us-right {
-            flex: 1;
-            padding: 20px;
-        }
-
         .about-us-title {
-            font-size: 36px;
+            font-size: 28px;
             font-weight: 700;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             color: #fffdd0;
         }
 
         .about-us-text {
-            font-size: 22px;
+            font-size: 18px;
             line-height: 1.6;
-            margin: 10px 0;
+            margin-bottom: 10px;
             color: #e0d8c1;
+            text-align: center;
         }
 
-        /* WHY YOU SHOULD WORK WITH US Section */
+        /* Why You Should Work With Us Section */
         .cream-section {
             background-color: #fffdd0;
-            padding: 60px 40px;
+            padding: 40px 20px;
             text-align: center;
         }
 
         .section-title {
-            font-size: 34px;
+            font-size: 28px;
             font-weight: bold;
             color: #004225;
             margin-bottom: 20px;
         }
 
         .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-gap: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .benefit-box {
             background-color: #f9f9f9;
             border-radius: 10px;
-            padding: 30px;
+            padding: 20px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -242,14 +220,15 @@
 
         /* HOW IT WORKS Section */
         .process-grid {
-            max-width: 1200px;
-            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
         }
 
         .process-step {
             font-size: 18px;
             color: #004225;
-            margin-bottom: 40px;
+            text-align: center;
         }
 
         .process-title {
@@ -261,7 +240,7 @@
 
         /* Footer Styles */
         .footer {
-            background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
+            background: linear-gradient(180deg, #004225, #006644);
             color: #fffdd0;
             text-align: center;
             padding: 40px;
@@ -269,7 +248,7 @@
 
         .footer p {
             margin: 5px 0;
-            font-size: 22px;
+            font-size: 18px;
             color: #fffdd0;
         }
 
@@ -281,25 +260,6 @@
         .footer a:hover {
             text-decoration: underline;
         }
-
-        @media (max-width: 768px) {
-            .header-tagline, .hero-title, .benefits-title, .cta-title {
-                font-size: 20px;
-            }
-
-            .hero-title {
-                font-size: 36px;
-            }
-
-            .hero-subtitle {
-                font-size: 20px;
-            }
-
-            .process-box {
-                width: 100%;
-            }
-        }
-
     </style>
 </head>
 <body>
@@ -331,15 +291,11 @@
 
     <div class="about-us-section">
         <div class="about-us-container">
-            <div class="about-us-left">
-                <img src="gus-ruballo-h5QNclJUiA8-unsplash.jpg" alt="About Us Image" class="about-us-image">
-            </div>
-            <div class="about-us-right">
-                <h2 class="about-us-title">ABOUT US</h2>
-                <p class="about-us-text">At <strong>OpenDoor</strong>, we help distressed homeowners turn their properties into cash quickly, providing financial relief and a fresh start. We're here to support you every step of the way, offering immediate solutions that fit your needs.</p>
-                <p class="about-us-text">Once you submit your information, you'll receive a <strong>fair cash offer within 24 hours</strong>. From there, we’ll take 7 to 30 days to complete due diligence and secure a buyer at the <strong>agreed price</strong>.</p>
-                <p class="about-us-text">If anything changes during this time, we’ll <strong>keep you informed</strong> and make sure we're aligned every step of the way. Our goal is to ensure a <strong>smooth and transparent process</strong>, so you feel confident and supported as we move forward in selling your home.</p>
-            </div>
+            <img src="gus-ruballo-h5QNclJUiA8-unsplash.jpg" alt="About Us Image" class="about-us-image">
+            <h2 class="about-us-title">ABOUT US</h2>
+            <p class="about-us-text">At <strong>OpenDoor</strong>, we help distressed homeowners turn their properties into cash quickly, providing financial relief and a fresh start.</p>
+            <p class="about-us-text">Once you submit your information, you'll receive a <strong>fair cash offer within 24 hours</strong>. We then take 7 to 30 days to complete due diligence and secure a buyer at the <strong>agreed price</strong>.</p>
+            <p class="about-us-text">If anything changes during this time, we’ll <strong>keep you informed</strong> every step of the way to ensure a <strong>smooth and transparent process</strong>.</p>
         </div>
     </div>
 
