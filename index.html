@@ -183,88 +183,72 @@
             color: #e0d8c1;
         }
 
-        /* Benefits Section */
-        .benefits-section {
-            background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
-            color: white;
+        /* WHY YOU SHOULD WORK WITH US Section */
+        .cream-section {
+            background-color: #fffdd0;
             padding: 60px 40px;
             text-align: center;
         }
 
-        .benefits-title {
+        .section-title {
             font-size: 34px;
             font-weight: bold;
-            letter-spacing: 1px;
-            color: #fffdd0;
+            color: #004225;
             margin-bottom: 20px;
         }
 
-        .benefit {
-            font-size: 22px;
-            color: #fffdd0;
-            margin: 15px 0;
-        }
-
-        /* Process Section */
-        .process-section {
-            background-color: #fffdd0;
-            color: #004225;
-            padding: 60px 40px; /* More white space */
-            text-align: center;
-        }
-
-        .process-grid {
+        .benefits-grid {
             display: grid;
-            grid-template-columns: repeat(3, 1fr); /* Three columns for the steps */
-            grid-gap: 40px; /* Increased space between boxes */
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
             max-width: 1200px;
             margin: 0 auto;
         }
 
-        .process-box {
-            background-color: #e0d8c1; /* Lighter box color */
+        .benefit-box {
+            background-color: #f9f9f9;
             border-radius: 10px;
             padding: 30px;
-            text-align: left;
+            text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-        .process-icon {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
+        .benefit-box span {
+            font-size: 36px;
         }
 
-        .process-icon-image {
-            width: 60px; /* Larger colorful icons */
-            height: 60px;
-        }
-
-        .process-item {
+        .benefit-title {
             font-size: 20px;
             font-weight: bold;
             color: #004225;
-            margin: 10px 0;
+            margin-top: 10px;
         }
 
-        .process-description {
+        /* HOW IT WORKS Section */
+        .process-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .process-step {
             font-size: 18px;
-            line-height: 1.6;
             color: #004225;
+            margin-bottom: 40px;
         }
 
-        @media (max-width: 768px) {
-            .process-grid {
-                grid-template-columns: 1fr; /* Stack boxes on smaller screens */
-            }
+        .process-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #004225;
         }
 
         /* Footer Styles */
         .footer {
-            background-color: #004225; /* Dark green background */
-            color: #fffdd0; /* Cream text color */
+            background-color: #004225;
+            color: #fffdd0;
             text-align: center;
-            padding: 40px; /* More padding for white space */
+            padding: 40px;
         }
 
         .footer p {
@@ -282,7 +266,6 @@
             text-decoration: underline;
         }
 
-        /* Mobile Adjustments */
         @media (max-width: 768px) {
             .header-tagline, .hero-title, .benefits-title, .cta-title {
                 font-size: 20px;
@@ -300,6 +283,7 @@
                 width: 100%;
             }
         }
+
     </style>
 </head>
 <body>
@@ -342,37 +326,46 @@
         </div>
     </div>
 
-    <div class="benefits-section">
-        <h2 class="benefits-title">WHY YOU SHOULD WORK WITH US</h2>
-        <h3 class="benefit"><span>💰</span> <strong>Financial Relief:</strong> We provide fair cash offers to help alleviate your financial burdens.</h3>
-        <h3 class="benefit"><span>🏚️</span> <strong>No Repairs Needed:</strong> Sell your property as-is; no need for costly repairs or renovations.</h3>
-        <h3 class="benefit"><span>⏳</span> <strong>Quick Process:</strong> Experience a streamlined and hassle-free selling process.</h3>
-        <h3 class="benefit"><span>🤝</span> <strong>Compassionate Support:</strong> We understand your situation and are here to help you through every step.</h3>
+    <div class="cream-section">
+        <h2 class="section-title">WHY YOU SHOULD WORK WITH US</h2>
+        <div class="benefits-grid">
+            <div class="benefit-box">
+                <span>💰</span>
+                <h3 class="benefit-title">Financial Relief</h3>
+                <p>We provide fair cash offers to help alleviate your financial burdens.</p>
+            </div>
+            <div class="benefit-box">
+                <span>🏚️</span>
+                <h3 class="benefit-title">No Repairs Needed</h3>
+                <p>Sell your property as-is; no need for costly repairs or renovations.</p>
+            </div>
+            <div class="benefit-box">
+                <span>⏳</span>
+                <h3 class="benefit-title">Quick Process</h3>
+                <p>Experience a streamlined and hassle-free selling process.</p>
+            </div>
+            <div class="benefit-box">
+                <span>🤝</span>
+                <h3 class="benefit-title">Compassionate Support</h3>
+                <p>We understand your situation and are here to help you through every step.</p>
+            </div>
+        </div>
     </div>
 
-    <div class="process-section">
-        <h2 class="process-title">HOW IT WORKS</h2>
+    <div class="cream-section">
+        <h2 class="section-title">HOW IT WORKS</h2>
         <div class="process-grid">
-            <div class="process-box">
-                <div class="process-icon">
-                    <img src="google-forms.png" alt="Step 1 Icon" class="process-icon-image">
-                </div>
-                <h3 class="process-item">1. Fill Out The Form</h3>
-                <p class="process-description">Tell us about your home in the form, and we will start to review it. After learning all the details, we will be ready to prepare you an offer with the best price for your place.</p>
+            <div class="process-step">
+                <h3 class="process-title">1. Fill Out The Form</h3>
+                <p>Tell us about your home, and we will review it. After learning all the details, we will prepare an offer with the best price for your place.</p>
             </div>
-            <div class="process-box">
-                <div class="process-icon">
-                    <img src="acceptance.png" alt="Step 2 Icon" class="process-icon-image">
-                </div>
-                <h3 class="process-item">2. Accept Our Offer</h3>
-                <p class="process-description">We contact you with our offer. You can ask any questions, and if you agree with an offer, you can accept it and continue the process.</p>
+            <div class="process-step">
+                <h3 class="process-title">2. Accept Our Offer</h3>
+                <p>We contact you with our offer. You can ask any questions, and if you agree, you can accept and continue the process.</p>
             </div>
-            <div class="process-box">
-                <div class="process-icon">
-                    <img src="dealing-property-trading.png" alt="Step 3 Icon" class="process-icon-image">
-                </div>
-                <h3 class="process-item">3. Close The Deal</h3>
-                <p class="process-description">Once you accept the offer, we sign a contract and schedule a closing date. Then we complete a transaction, and you are getting your cash in a few days.</p>
+            <div class="process-step">
+                <h3 class="process-title">3. Close The Deal</h3>
+                <p>Once you accept the offer, we sign a contract and schedule a closing date. You will receive your cash in a few days.</p>
             </div>
         </div>
     </div>
