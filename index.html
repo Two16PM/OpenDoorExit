@@ -17,7 +17,7 @@
         /* Header Styles */
         .header {
             background-color: #fffdd0;
-            padding: 20px;
+            padding: 40px; /* Increased padding */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
@@ -53,14 +53,14 @@
         /* Gradient Background for Dark Green Sections */
         .dark-section {
             background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
-            padding: 100px 20px;
+            padding: 120px 40px; /* Increased padding for more white space */
             text-align: center;
         }
 
         /* Hero Section */
         .hero-section {
             background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
-            padding: 100px 20px;
+            padding: 120px 40px; /* Increased padding for more white space */
             text-align: center;
         }
 
@@ -81,7 +81,7 @@
 
         /* Call to Action Section */
         .cta-section {
-            padding: 40px 20px;
+            padding: 60px 20px; /* More padding for white space */
             text-align: center;
             background-color: #fffdd0;
         }
@@ -107,15 +107,15 @@
         }
 
         .form-input {
-            margin-bottom: 15px;
-            padding: 12px;
+            margin-bottom: 20px; /* Increased space between form elements */
+            padding: 14px;
             font-size: 18px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
 
         .form-textarea {
-            height: 100px;
+            height: 120px; /* Increased textarea size */
         }
 
         /* Button Hover Effects */
@@ -123,24 +123,25 @@
             background-color: #004225;
             color: #fffdd0;
             border: none;
-            padding: 15px;
+            padding: 20px;
             font-size: 30px;
             font-weight: bold;
             letter-spacing: 1px;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease; /* Added zoom effect */
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
 
         .form-button:hover {
             background-color: #007c7a;
-            transform: scale(1.05); /* Slight zoom on hover */
+            transform: scale(1.05);
         }
 
+        /* About Us Section */
         .about-us-section {
-            background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
+            background: url('subtle-pattern.png'), linear-gradient(180deg, #004225, #006644); /* Added subtle texture */
             color: white;
-            padding: 40px 20px;
+            padding: 60px 40px; /* More padding for white space */
             text-align: left;
         }
 
@@ -150,7 +151,7 @@
             justify-content: center;
             max-width: 1200px;
             margin: 0 auto;
-        }    
+        }
 
         .about-us-left {
             flex: 1;
@@ -179,13 +180,14 @@
             font-size: 22px;
             line-height: 1.6;
             margin: 10px 0;
-            color: #e0d8c1; /* Slightly darker cream for better readability */
+            color: #e0d8c1;
         }
 
+        /* Benefits Section */
         .benefits-section {
             background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
             color: white;
-            padding: 40px 20px;
+            padding: 60px 40px;
             text-align: center;
         }
 
@@ -207,22 +209,22 @@
         .process-section {
             background-color: #fffdd0;
             color: #004225;
-            padding: 40px 20px;
+            padding: 60px 40px; /* More white space */
             text-align: center;
         }
 
         .process-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* Three columns for the steps */
-            grid-gap: 20px; /* Space between boxes */
+            grid-gap: 40px; /* Increased space between boxes */
             max-width: 1200px;
             margin: 0 auto;
         }
 
         .process-box {
-            background-color: #004225;
+            background-color: #e0d8c1; /* Lighter box color */
             border-radius: 10px;
-            padding: 20px;
+            padding: 30px;
             text-align: left;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
@@ -230,25 +232,25 @@
         .process-icon {
             display: flex;
             justify-content: center;
-            margin-bottom: 15px;
+            margin-bottom: 20px;
         }
 
         .process-icon-image {
-            width: 50px; /* Adjust icon size */
-            height: 50px;
+            width: 60px; /* Larger colorful icons */
+            height: 60px;
         }
 
         .process-item {
             font-size: 20px;
             font-weight: bold;
-            color: #fffdd0;
+            color: #004225;
             margin: 10px 0;
         }
 
         .process-description {
             font-size: 18px;
-            line-height: 1.5;
-            color: #fffdd0;
+            line-height: 1.6;
+            color: #004225;
         }
 
         @media (max-width: 768px) {
@@ -262,7 +264,7 @@
             background-color: #004225; /* Dark green background */
             color: #fffdd0; /* Cream text color */
             text-align: center;
-            padding: 20px;
+            padding: 40px; /* More padding for white space */
         }
 
         .footer p {
