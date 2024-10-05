@@ -99,7 +99,44 @@
             margin-bottom: 30px;
         }
 
-        /* About Us Section */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-input {
+            margin-bottom: 15px;
+            padding: 12px;
+            font-size: 18px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-textarea {
+            height: 100px;
+        }
+
+        /* Button Hover Effects */
+        .form-button {
+            background-color: #004225;
+            color: #fffdd0;
+            border: none;
+            padding: 15px;
+            font-size: 30px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease; /* Added zoom effect */
+        }
+
+        .form-button:hover {
+            background-color: #007c7a;
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
         .about-us-section {
             background: linear-gradient(180deg, #004225, #006644); /* Gradient background */
             color: white;
@@ -113,7 +150,7 @@
             justify-content: center;
             max-width: 1200px;
             margin: 0 auto;
-        }
+        }    
 
         .about-us-left {
             flex: 1;
@@ -280,14 +317,20 @@
     <div class="cta-section">
         <h2 class="cta-title">TAKE THE FIRST STEP TODAY!</h2>
         <h3 class="cta-description">Fill the form to get your cash offer.</h3>
-        <!-- Embed Google Form -->
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSesxfoRMlqf-BYsdoZoqD1L7CAJJGOVPP7_QPzURvxqPeRSQg/viewform?embedded=true" width="640" height="959" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <form class="contact-form" netlify>
+            <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+            <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+            <input type="tel" class="form-input" name="phone" placeholder="Your Phone Number" required>
+            <input type="text" class="form-input" name="property-address" placeholder="Property Address" required>
+            <textarea class="form-input form-textarea" name="message" placeholder="Brief Message (optional)"></textarea>
+            <button type="submit" class="form-button">Get My Cash Offer</button>
+        </form>
     </div>
 
     <div class="about-us-section">
         <div class="about-us-container">
             <div class="about-us-left">
-                <img src="path-to-your-image.jpg" alt="About Us Image" class="about-us-image">
+                <img src="gus-ruballo-h5QNclJUiA8-unsplash.jpg" alt="About Us Image" class="about-us-image">
             </div>
             <div class="about-us-right">
                 <h2 class="about-us-title">ABOUT US</h2>
@@ -310,21 +353,21 @@
         <div class="process-grid">
             <div class="process-box">
                 <div class="process-icon">
-                    <img src="path-to-your-icon-1.png" alt="Step 1 Icon" class="process-icon-image">
+                    <img src="contract-form.png" alt="Step 1 Icon" class="process-icon-image">
                 </div>
                 <h3 class="process-item">1. Fill Out The Form</h3>
                 <p class="process-description">Tell us about your home in the form, and we will start to review it. After learning all the details, we will be ready to prepare you an offer with the best price for your place.</p>
             </div>
             <div class="process-box">
                 <div class="process-icon">
-                    <img src="path-to-your-icon-2.png" alt="Step 2 Icon" class="process-icon-image">
+                    <img src="contract.png" alt="Step 2 Icon" class="process-icon-image">
                 </div>
                 <h3 class="process-item">2. Accept Our Offer</h3>
                 <p class="process-description">We contact you with our offer. You can ask any questions, and if you agree with an offer, you can accept it and continue the process.</p>
             </div>
             <div class="process-box">
                 <div class="process-icon">
-                    <img src="path-to-your-icon-3.png" alt="Step 3 Icon" class="process-icon-image">
+                    <img src="dealing-property-trading.png" alt="Step 3 Icon" class="process-icon-image">
                 </div>
                 <h3 class="process-item">3. Close The Deal</h3>
                 <p class="process-description">Once you accept the offer, we sign a contract and schedule a closing date. Then we complete a transaction, and you are getting your cash in a few days.</p>
