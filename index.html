@@ -26,11 +26,15 @@
             padding: 0;
         }
 
+        /* Unified background gradient for header and hero section */
+        .unified-background {
+            background: linear-gradient(180deg, #62B6CB, #1B4965); /* Gradient from light to dark blue */
+            color: white;
+        }
+
         /* Header Styles */
         .header {
-            background-color: #1B4965; /* Dark blue for header */
             padding: 40px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -69,7 +73,6 @@
 
         /* Hero Section */
         .hero-section {
-            background: linear-gradient(180deg, #62B6CB, #1B4965); /* Gradient from light to dark blue */
             padding: 120px 40px;
             text-align: center;
         }
@@ -320,7 +323,7 @@
     </style>
 </head>
 <body>
-    <div class="header">
+    <div class="header unified-background">
         <img src="opendoor logo - warm.png" alt="Company Logo" class="logo">
         <h1 class="header-tagline">Helping You Move Forward with Ease</h1>
         <div class="contact-info">
@@ -329,7 +332,7 @@
         </div>
     </div>
 
-    <div class="hero-section">
+    <div class="hero-section unified-background">
         <h2 class="hero-title">WE'LL BUY YOUR HOUSE FAST FOR CASH</h2>
         <h3 class="hero-subtitle">No Fees. No Commissions. No Hassle.</h3>
     </div>
@@ -409,8 +412,7 @@
 
     <div class="footer">
         <p><strong>Didn’t find the answer to your question? Contact us for support.</strong></p>
-        <br>
-        <p>Contact Us: 📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
+        <p>📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
         <p>© 2024 OpenDoor Property Solutions. All rights reserved.</p>
     </div>
 
