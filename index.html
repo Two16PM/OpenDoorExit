@@ -336,8 +336,8 @@
 
     <div class="cta-section">
         <h2 class="cta-title">TAKE THE FIRST STEP TODAY!</h2>
-        <h3 class="cta-description">Fill the form to get your cash offer</h3>
-        <form id="contact-form" class="contact-form" action="https://formsubmit.co/robin@two16.ca" method="POST">
+        <h3 class="cta-description">Fill the form to get your cash offer</h3>            
+        <form id="contact-form" class="contact-form" action="https://script.google.com/macros/s/AKfycbz2U89cDSKymI2GwbNd64i8unppjUmx51lr6yfGEy0U9vcpnKIOYqfACcusZ0Ej6CV_aQ/exec" method="POST">
             <input type="text" class="form-input" name="name" placeholder="Your Name" required>
             <input type="email" class="form-input" name="email" placeholder="Your Email" required>
             <input type="tel" class="form-input" name="phone" placeholder="Your Phone Number" required>
@@ -346,7 +346,6 @@
             <button type="submit" class="form-button">Get My Cash Offer</button>
         </form>
     </div>
-
     <div class="about-us-section">
         <div class="about-us-container">
             <div class="about-us-left">
@@ -411,28 +410,29 @@
         <p>Contact Us: 📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
         <p>© 2024 OpenDoor Property Solutions. All rights reserved.</p>
     </div>
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevents the default form submit action
 
-    <script>
-        document.getElementById('contact-form').addEventListener('submit', function(event) {
-            event.preventDefault(); // Prevents the default form submit action
+    var formData = new FormData(this);
 
-            var formData = new FormData(this);
+    fetch(this.action, {
+        method: this.method,
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Thank you for connecting with us. We\'ll get back to you right away.');
+            this.reset(); // Reset the form fields after submission
+        } else {
+            alert('Oops! There was a problem submitting your form.');
+        }
+    });
+});
+</script>
 
-            fetch(this.action, {
-                method: this.method,
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            }).then(response => {
-                if (response.ok) {
-                    alert('Thank you for connecting with us. We\'ll get back to you right away.');
-                    this.reset(); // Reset the form fields after submission
-                } else {
-                    alert('Oops! There was a problem submitting your form.');
-                }
-            });
-        });
-    </script>
+    
 </body>
 </html>
