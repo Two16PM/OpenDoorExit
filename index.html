@@ -31,16 +31,15 @@
         .unified-background {
             background: linear-gradient(180deg, #62B6CB, #1B4965); /* Gradient from medium blue to dark blue */
             color: white;
-            padding: 40px 0;
             text-align: center;
+            margin: 0;
+            padding: 0;
         }
 
-        /* Header Styles */
+
+        /* Header and Hero as one block */
         .header {
-            padding: 20px 40px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
+            padding: 20px 0; /* Reduce padding for a smoother transition */
         }
 
         .logo {
@@ -60,11 +59,6 @@
             color: #FFF; /* White for contact details */
         }
 
-        .contact-info p {
-            margin: 0;
-            font-size: 16px;
-        }
-
         .contact-info a {
             color: #BEE9E8; /* Light blue for links */
             text-decoration: none;
@@ -72,6 +66,30 @@
 
         .contact-info a:hover {
             text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            padding: 60px 20px; /* Adjusted padding to ensure smooth transition with header */
+        }
+
+        .hero-title {
+            font-size: 52px;
+            font-weight: bold;
+            color: #BEE9E8; /* Light blue for hero text */
+            margin-bottom: 10px;
+        }
+
+        .hero-subtitle {
+            font-size: 38px;
+            color: #FFF; /* White for hero subtitle */
+            margin-bottom: 30px;
+        
+        }
+
+        .contact-info p {
+            margin: 0;
+            font-size: 16px;
         }
 
         /* Hero Section */
