@@ -28,7 +28,7 @@
 
         /* Header Styles */
         .header {
-            background-color: #E36414; /* Warm brown-orange */
+            background-color: #5F0F40; /* Deep purple for header */
             padding: 40px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             display: flex;
@@ -91,7 +91,7 @@
 
         /* Call to Action Section */
         .cta-section {
-            padding: 60px 20px;
+            padding: 100px 20px; /* Increased padding for more whitespace */
             text-align: center;
             background-color: #E36414; /* Warm brown-orange */
         }
@@ -130,7 +130,6 @@
             width: 100%;
         }
 
-        /* Button Hover Effects */
         .form-button {
             background-color: #9A031E; /* Bright red for buttons */
             color: #FFF; /* White text */
@@ -151,9 +150,9 @@
 
         /* About Us Section */
         .about-us-section {
-            background: url('subtle-pattern.png'), linear-gradient(180deg, #5F0F40, #9A031E); /* Texture with gradient */
-            color: white;
-            padding: 60px 40px;
+            background-color: #f4f4f4; /* Light cream background */
+            color: #5F0F40; /* Deep purple for text */
+            padding: 80px 40px; /* More padding for better readability */
         }
 
         .about-us-container {
@@ -191,7 +190,7 @@
             font-size: 22px;
             line-height: 1.6;
             margin: 10px 0;
-            color: #E0D8C1; /* Cream for text */
+            color: #5F0F40; /* Deep purple text */
         }
 
         /* WHY YOU SHOULD WORK WITH US Section */
@@ -217,7 +216,7 @@
         }
 
         .benefit-box {
-            background-color: #FB8B24; /* Vibrant orange for benefit boxes */
+            background-color: #f4f4f4; /* Lighter background for balance */
             border-radius: 10px;
             padding: 30px;
             text-align: center;
@@ -231,7 +230,7 @@
         .benefit-title {
             font-size: 20px;
             font-weight: bold;
-            color: #FFF; /* White for benefit titles */
+            color: #5F0F40; /* Deep purple for text */
             margin-top: 10px;
         }
 
@@ -256,7 +255,7 @@
 
         /* Footer Styles */
         .footer {
-            background: linear-gradient(180deg, #5F0F40, #0F4C5C); /* Dark gradient */
+            background-color: #0F4C5C; /* Teal background */
             color: #FFF; /* White text */
             text-align: center;
             padding: 40px;
@@ -412,27 +411,28 @@
         <p>Contact Us: 📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
         <p>© 2024 OpenDoor Property Solutions. All rights reserved.</p>
     </div>
+
     <script>
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submit action
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevents the default form submit action
 
-    var formData = new FormData(this);
+            var formData = new FormData(this);
 
-    fetch(this.action, {
-        method: this.method,
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            alert('Thank you for connecting with us. We'll get back to you right away.');
-            this.reset(); // Reset the form fields after submission
-        } else {
-            alert('Oops! There was a problem submitting your form.');
-        }
-    });
-});
-</script>
+            fetch(this.action, {
+                method: this.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    alert('Thank you for connecting with us. We\'ll get back to you right away.');
+                    this.reset(); // Reset the form fields after submission
+                } else {
+                    alert('Oops! There was a problem submitting your form.');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
