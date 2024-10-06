@@ -30,6 +30,8 @@
         .unified-background {
             background: linear-gradient(180deg, #62B6CB, #1B4965); /* Gradient from light to dark blue */
             color: white;
+            margin: 0;
+            padding: 0;
         }
 
         /* Header Styles */
@@ -63,7 +65,7 @@
         }
 
         .contact-info a {
-            color: #62B6CB; /* Lighter blue for links */
+            color: #BEE9E8; /* Light blue for links */
             text-decoration: none;
         }
 
@@ -75,6 +77,7 @@
         .hero-section {
             padding: 120px 40px;
             text-align: center;
+            margin-top: -40px; /* Eliminate the division between header and hero */
         }
 
         .hero-title {
@@ -94,7 +97,7 @@
 
         /* Call to Action Section */
         .cta-section {
-            padding: 100px 20px; 
+            padding: 100px 20px;
             text-align: center;
             background-color: #62B6CB; /* Lighter blue background */
         }
@@ -155,7 +158,7 @@
         .about-us-section {
             background-color: #f4f4f4; /* Light cream background */
             color: #1B4965; /* Dark blue for text */
-            padding: 80px 40px; 
+            padding: 80px 40px;
         }
 
         .about-us-container {
@@ -323,35 +326,41 @@
     </style>
 </head>
 <body>
-    <div class="header unified-background">
-        <img src="opendoor logo - warm.png" alt="Company Logo" class="logo">
-        <h1 class="header-tagline">Helping You Move Forward with Ease</h1>
-        <div class="contact-info">
-            <p>To sell your door fast, contact us at:</p>
-            <p>📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
+    <div class="unified-background">
+        <!-- Header -->
+        <div class="header">
+            <img src="opendoor logo - warm.png" alt="Company Logo" class="logo">
+            <h1 class="header-tagline">Helping You Move Forward with Ease</h1>
+            <div class="contact-info">
+                <p>To sell your door fast, contact us at:</p>
+                <p>📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
+            </div>
+        </div>
+
+        <!-- Hero Section -->
+        <div class="hero-section">
+            <h2 class="hero-title">WE'LL BUY YOUR HOUSE FAST FOR CASH</h2>
+            <h3 class="hero-subtitle">No Fees. No Commissions. No Hassle.</h3>
         </div>
     </div>
 
-    <div class="hero-section unified-background">
-        <h2 class="hero-title">WE'LL BUY YOUR HOUSE FAST FOR CASH</h2>
-        <h3 class="hero-subtitle">No Fees. No Commissions. No Hassle.</h3>
-    </div>
-
+    <!-- Call to Action Section -->
     <div class="cta-section">
         <h2 class="cta-title">TAKE THE FIRST STEP TODAY!</h2>
         <h3 class="cta-description">Fill the form to get your cash offer</h3>            
-    <div id="form-container">
-        <form id="contact-form" class="contact-form" action="https://script.google.com/macros/s/AKfycbz2U89cDSKymI2GwbNd64i8unppjUmx51lr6yfGEy0U9vcpnKIOYqfACcusZ0Ej6CV_aQ/exec" method="POST">
-            <input type="text" class="form-input" name="name" placeholder="Your Name" required>
-            <input type="email" class="form-input" name="email" placeholder="Your Email" required>
-            <input type="tel" class="form-input" name="phone" placeholder="Your Phone Number" required>
-            <input type="text" class="form-input" name="property-address" placeholder="Property Address" required>
-            <textarea class="form-input form-textarea" name="message" placeholder="Brief Message (optional)"></textarea>
-            <button type="submit" class="form-button">Get My Cash Offer</button>
-        </form>
+        <div id="form-container">
+            <form id="contact-form" class="contact-form" action="https://script.google.com/macros/s/AKfycbz2U89cDSKymI2GwbNd64i8unppjUmx51lr6yfGEy0U9vcpnKIOYqfACcusZ0Ej6CV_aQ/exec" method="POST">
+                <input type="text" class="form-input" name="name" placeholder="Your Name" required>
+                <input type="email" class="form-input" name="email" placeholder="Your Email" required>
+                <input type="tel" class="form-input" name="phone" placeholder="Your Phone Number" required>
+                <input type="text" class="form-input" name="property-address" placeholder="Property Address" required>
+                <textarea class="form-input form-textarea" name="message" placeholder="Brief Message (optional)"></textarea>
+                <button type="submit" class="form-button">Get My Cash Offer</button>
+            </form>
         </div>
     </div>
 
+    <!-- About Us Section -->
     <div class="about-us-section">
         <div class="about-us-container">
             <div class="about-us-left">
@@ -366,6 +375,7 @@
         </div>
     </div>
 
+    <!-- Why You Should Work With Us Section -->
     <div class="cream-section">
         <h2 class="section-title">WHY YOU SHOULD WORK WITH US</h2>
         <div class="benefits-grid">
@@ -392,6 +402,7 @@
         </div>
     </div>
 
+    <!-- How It Works Section -->
     <div class="cream-section">
         <h2 class="section-title">HOW IT WORKS</h2>
         <div class="process-grid">
@@ -410,40 +421,42 @@
         </div>
     </div>
 
+    <!-- Footer Section -->
     <div class="footer">
         <p><strong>Didn’t find the answer to your question? Contact us for support.</strong></p>
         <p>📞 403-701-5759 | ✉️ <a href="mailto:robin@two16.ca">robin@two16.ca</a></p>
         <p>© 2024 OpenDoor Property Solutions. All rights reserved.</p>
     </div>
 
-<script>
-document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submit action
+    <!-- Form Submit Script -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the default form submit action
 
-    var formData = new FormData(this);
+            var formData = new FormData(this);
 
-    fetch(this.action, {
-        method: this.method,
-        body: formData,
-        headers: {
-            'Accept': 'application/json'
-        }
-    }).then(response => {
-        if (response.ok) {
-            // Replace the form with a success message
-            document.getElementById('form-container').innerHTML = `
-                <h3>Thank you for connecting with us!</h3>
-                <p>We'll get back to you shortly.</p>
-            `;
-        } else {
-            // Show an error message on failure
-            document.getElementById('form-container').innerHTML = `
-                <h3>Oops! Something went wrong.</h3>
-                <p>Please try again later.</p>
-            `;
-        }
-    });
-});
-</script>
+            fetch(this.action, {
+                method: this.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    // Replace the form with a success message
+                    document.getElementById('form-container').innerHTML = `
+                        <h3>Thank you for connecting with us!</h3>
+                        <p>We'll get back to you shortly.</p>
+                    `;
+                } else {
+                    // Show an error message on failure
+                    document.getElementById('form-container').innerHTML = `
+                        <h3>Oops! Something went wrong.</h3>
+                        <p>Please try again later.</p>
+                    `;
+                }
+            });
+        });
+    </script>
 </body>
 </html>
