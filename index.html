@@ -337,6 +337,7 @@
     <div class="cta-section">
         <h2 class="cta-title">TAKE THE FIRST STEP TODAY!</h2>
         <h3 class="cta-description">Fill the form to get your cash offer</h3>            
+    <div id="form-container">
         <form id="contact-form" class="contact-form" action="https://script.google.com/macros/s/AKfycbz2U89cDSKymI2GwbNd64i8unppjUmx51lr6yfGEy0U9vcpnKIOYqfACcusZ0Ej6CV_aQ/exec" method="POST">
             <input type="text" class="form-input" name="name" placeholder="Your Name" required>
             <input type="email" class="form-input" name="email" placeholder="Your Email" required>
@@ -345,6 +346,7 @@
             <textarea class="form-input form-textarea" name="message" placeholder="Brief Message (optional)"></textarea>
             <button type="submit" class="form-button">Get My Cash Offer</button>
         </form>
+        </div>
     </div>
     <div class="about-us-section">
         <div class="about-us-container">
@@ -412,7 +414,7 @@
     </div>
 <script>
 document.getElementById('contact-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevents the default form submit action
+    event.preventDefault(); // Prevent the default form submit action
 
     var formData = new FormData(this);
 
@@ -424,14 +426,22 @@ document.getElementById('contact-form').addEventListener('submit', function(even
         }
     }).then(response => {
         if (response.ok) {
-            alert('Thank you for connecting with us. We\'ll get back to you right away.');
-            this.reset(); // Reset the form fields after submission
+            // Replace the form with a success message
+            document.getElementById('form-container').innerHTML = `
+                <h3>Thank you for connecting with us!</h3>
+                <p>We'll get back to you shortly.</p>
+            `;
         } else {
-            alert('Oops! There was a problem submitting your form.');
+            // Show an error message on failure
+            document.getElementById('form-container').innerHTML = `
+                <h3>Oops! Something went wrong.</h3>
+                <p>Please try again later.</p>
+            `;
         }
     });
 });
 </script>
+
 
     
 </body>
